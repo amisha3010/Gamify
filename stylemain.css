@@ -1,0 +1,120 @@
+body{
+    background-color: #393E46;
+}
+.mainbutton {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 9px solid #656c79;
+    border-radius: 20%;
+    
+    
+   
+  }
+  .box h3{
+    text-align: center;
+    position: relative;
+    right:46px;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  h1{
+    color: #4ECCA3;
+    text-shadow: 6px 0 #232931;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.3rem;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .flipX {
+    animation: 1s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(70def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(500deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+  .container{
+    margin:10%;
+  }
+
+  h3{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 30px;
+    text-shadow: 3px 2px #DA0463;
+  }
+
+ #drum{
+    background-image:  url("https://www.rimmersmusic.co.uk/images/performance-percussion-pp220wr-5-piece-drum-kit-red-p43119-88946_image.jpg");
+ background-size: cover;
+  }
+
+  #dice{
+  background-image:  url("https://static6.depositphotos.com/1036672/542/i/450/depositphotos_5427096-stock-photo-red-dice.jpg");
+   background-size: cover; 
+  }
+
+  #memory{
+  background-image:  url("https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/30/0c/ea/300cea1c-4a08-f996-bf56-de0db0701194/AppIcon-1x_U007emarketing-85-220-6.png/1024x1024bb.png");
+ background-size: cover;
+}
+
+
+
+.popup-title span{
+
+  visibility: hidden;
+}
+
+.mainbutton:hover .popup-title{
+ /* visibility: visible;
+  color:black; */
+  background: whitesmoke;
+  height:182px;
+  width:182px;
+  border-radius: 17%;
+  background-size: cover;
+  animation: slide-up 2s;
+opacity: 0.26;
+position: relative;
+right:5.6px;
+bottom:0.9px;
+}
+ 
+/* @keyframes slide-up {
+  from{
+    opacity:0.3;
+  
+  }
+  to{
+    opacity: 0.4;
+ 
+  }
+} */
+
+  @media (max-width:600px) {
+    .container{
+      margin-left:20%;
+      
+    }
+    .box h3{
+      text-align: center;
+      position: relative;
+      right:9 0px;
+  
+    }
+  } 
